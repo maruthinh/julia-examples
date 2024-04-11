@@ -29,10 +29,6 @@ void sqrt_func_from_julia(double *arr, int arr_len){
   // Call the Julia function to compute sqrt on these array values
   jl_call1(my_sqrt_func, (jl_value_t *)x);
 
-    for (int i = 0; i < jl_array_len(x); i++) {
-    printf("Array vals after sqrt: %f\n", xData[i]);
-  }
-
   JL_GC_POP();
 
   jl_atexit_hook(0);

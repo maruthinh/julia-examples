@@ -1,0 +1,1 @@
+Many of the examples and notebooks here are from the Coursera's course on Julia by University of Cape Town
